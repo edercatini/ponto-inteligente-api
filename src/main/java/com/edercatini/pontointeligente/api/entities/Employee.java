@@ -102,7 +102,7 @@ public class Employee implements Serializable {
         this.amountOfWorkTime = amountOfWorkTime;
     }
 
-    @Column(name = "amount_of_lunchtime", nullable = false)
+    @Column(name = "amount_of_lunchtime", nullable = true)
     public Long getAmountOfLunchTime() {
         return amountOfLunchTime;
     }
