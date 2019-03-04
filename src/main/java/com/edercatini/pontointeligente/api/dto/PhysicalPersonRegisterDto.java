@@ -1,6 +1,5 @@
 package com.edercatini.pontointeligente.api.dto;
 
-import java.math.BigDecimal;
 import java.util.Optional;
 
 public class PhysicalPersonRegisterDto {
@@ -62,7 +61,7 @@ public class PhysicalPersonRegisterDto {
         return hourValue;
     }
 
-    public void setHourValue(BigDecimal hourValue) {
+    public void setHourValue(Optional<String> hourValue) {
         this.hourValue = hourValue;
     }
 

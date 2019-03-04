@@ -106,9 +106,6 @@ public class PhysicalPersonRegisterController {
         employee.getAmountOfWorkTimeOpt()
             .ifPresent(amountOfWorkingHours -> object.setAmountOfWorkingHours(Optional.of(Float.toString(amountOfWorkingHours))));
 
-        employee.getHourValueOpt()
-            .ifPresent(hourValue -> object.setHourValue(hourValue));
-
         return object;
     }
 }
